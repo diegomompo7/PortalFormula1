@@ -1,0 +1,4 @@
+body{
+    max-width: $max-width;
+   @include margin(0, auto);
+}

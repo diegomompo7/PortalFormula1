@@ -1,0 +1,26 @@
+.header{
+    @include header();
+
+    &__logo{
+        @include header-logo();
+    }
+    &__logo-img{
+        @include header-logo-img();
+    }
+    &__menu{
+        @include header-menu();
+    }
+    &__menu-content{
+        @include menu-content();
+    }
+    &__menu:active &__menu-content{
+        display: block;
+        opacity: 1;
+    }
+    &__menu-content a{
+        display: block;
+        color: #000;
+        padding: 5px;
+        text-decoration: none;
+    }
+}

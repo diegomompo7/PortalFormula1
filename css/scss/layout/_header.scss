@@ -1,0 +1,19 @@
+@mixin header(){
+    @include flexible(flex, space-around, center, empty(), empty());
+}
+@mixin header-logo(){
+    @include size(480px, empty());
+}
+@mixin header-logo-img(){
+    @include size(50%, empty());
+}
+@mixin header-menu(){
+    border: 1px solid black;
+}
+@mixin menu-content(){
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
